@@ -20,7 +20,12 @@ module.exports = first
  * @param {function} done
  * @public
  */
-
+/**对一系列指定触发器绑定指定的回调函数, 每次触发相应的事件时都会调用该回调函数
+ *[
+    [ee1, 'close', 'end', 'error'],
+    [ee2, 'error']
+  ]
+ */
 function first(stuff, done) {
   if (!Array.isArray(stuff))
     throw new TypeError('arg must be an array of [ee, events...] arrays')
