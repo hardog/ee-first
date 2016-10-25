@@ -1,1 +1,1 @@
-See example.js & index.j
+See example.js & index.js
